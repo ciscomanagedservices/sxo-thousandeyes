@@ -10,6 +10,19 @@
         "schema_id": "datatype.string",
         "properties": {
           "value": "",
+          "scope": "output",
+          "name": "Output",
+          "type": "datatype.string",
+          "is_required": false,
+          "is_invisible": false
+        },
+        "unique_name": "variable_workflow_01P64NCSFQKH456LRxSmppoGhb8VuO0qS8K",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "",
           "scope": "input",
           "name": "Filter Criteria",
           "type": "datatype.string",
@@ -18,19 +31,6 @@
           "is_invisible": false
         },
         "unique_name": "variable_workflow_01P64NCSFQGCU3F3Tq1Rb6ANvC6HZV6ArSL",
-        "object_type": "variable_workflow"
-      },
-      {
-        "schema_id": "datatype.string",
-        "properties": {
-          "value": "",
-          "scope": "output",
-          "name": "Output",
-          "type": "datatype.string",
-          "is_required": false,
-          "is_invisible": false
-        },
-        "unique_name": "variable_workflow_01P64NCSFQKH456LRxSmppoGhb8VuO0qS8K",
         "object_type": "variable_workflow"
       },
       {
@@ -77,7 +77,7 @@
           "action_timeout": 180,
           "content_type": "application/json",
           "continue_on_error_status_code": false,
-          "continue_on_failure": false,
+          "continue_on_failure": true,
           "display_name": "Get Tests List",
           "error": "null",
           "method": "GET",
