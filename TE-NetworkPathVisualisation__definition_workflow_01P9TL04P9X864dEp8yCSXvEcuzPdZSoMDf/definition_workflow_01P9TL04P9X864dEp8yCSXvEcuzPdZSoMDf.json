@@ -10,13 +10,13 @@
         "schema_id": "datatype.string",
         "properties": {
           "value": "",
-          "scope": "input",
-          "name": "To Date",
+          "scope": "output",
+          "name": "Output",
           "type": "datatype.string",
           "is_required": false,
           "is_invisible": false
         },
-        "unique_name": "variable_workflow_01P9TL04ITL680mWhuun1e2PsY890eLkote",
+        "unique_name": "variable_workflow_01P9TL04ITQ6W4Z8DMWnJiQLm4lLVjMS1ZN",
         "object_type": "variable_workflow"
       },
       {
@@ -29,6 +29,19 @@
           "is_invisible": false
         },
         "unique_name": "variable_workflow_01PCEIG8UUDXP60WUHNAu292aLgl1i8Kazu",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "",
+          "scope": "input",
+          "name": "From Date",
+          "type": "datatype.string",
+          "is_required": false,
+          "is_invisible": false
+        },
+        "unique_name": "variable_workflow_01P9TL04ITNVN0LJSX5zKzM83nb0h6hgn1t",
         "object_type": "variable_workflow"
       },
       {
@@ -49,26 +62,13 @@
         "schema_id": "datatype.string",
         "properties": {
           "value": "",
-          "scope": "output",
-          "name": "Output",
+          "scope": "input",
+          "name": "To Date",
           "type": "datatype.string",
           "is_required": false,
           "is_invisible": false
         },
-        "unique_name": "variable_workflow_01P9TL04ITQ6W4Z8DMWnJiQLm4lLVjMS1ZN",
-        "object_type": "variable_workflow"
-      },
-      {
-        "schema_id": "datatype.string",
-        "properties": {
-          "value": "",
-          "scope": "local",
-          "name": "From Date - To Date",
-          "type": "datatype.string",
-          "is_required": false,
-          "is_invisible": false
-        },
-        "unique_name": "variable_workflow_01P9TL04ITP0T2Wz26iOvQKQGaWV6hxL5p7",
+        "unique_name": "variable_workflow_01P9TL04ITL680mWhuun1e2PsY890eLkote",
         "object_type": "variable_workflow"
       },
       {
@@ -88,13 +88,13 @@
         "schema_id": "datatype.string",
         "properties": {
           "value": "",
-          "scope": "input",
-          "name": "From Date",
+          "scope": "local",
+          "name": "From Date - To Date",
           "type": "datatype.string",
           "is_required": false,
           "is_invisible": false
         },
-        "unique_name": "variable_workflow_01P9TL04ITNVN0LJSX5zKzM83nb0h6hgn1t",
+        "unique_name": "variable_workflow_01P9TL04ITP0T2Wz26iOvQKQGaWV6hxL5p7",
         "object_type": "variable_workflow"
       }
     ],
@@ -111,8 +111,7 @@
       },
       "target": {
         "target_type": "web-service.endpoint",
-        "target_id": "definition_target_01P3MWIYQ3A8A1rJ3FHbF78zUjm8DoD9pjF",
-        "execute_on_workflow_target": true
+        "specify_on_workflow_start": true
       }
     },
     "object_type": "definition_workflow",
@@ -476,42 +475,6 @@
     "categories": [
       "category_1BMfMXSnJMyt5Ihqi7rWJr5N8cf"
     ]
-  },
-  "targets": {
-    "definition_target_01P3MWIYQ3A8A1rJ3FHbF78zUjm8DoD9pjF": {
-      "unique_name": "definition_target_01P3MWIYQ3A8A1rJ3FHbF78zUjm8DoD9pjF",
-      "name": "ThousandEyes",
-      "title": "ThousandEyes",
-      "type": "web-service.endpoint",
-      "base_type": "target",
-      "object_type": "definition_target",
-      "properties": {
-        "default_runtime_user_id": "definition_runtime_user_01P3MVJ30ETO74UGRmeHwWkfpjWv3ubfm5f",
-        "disable_certificate_validation": false,
-        "display_name": "ThousandEyes",
-        "host": "api.thousandeyes.com",
-        "ignore_proxy": false,
-        "no_runtime_user": false,
-        "path": "v6",
-        "protocol": "https"
-      }
-    }
-  },
-  "runtime_users": {
-    "definition_runtime_user_01P3MVJ30ETO74UGRmeHwWkfpjWv3ubfm5f": {
-      "unique_name": "definition_runtime_user_01P3MVJ30ETO74UGRmeHwWkfpjWv3ubfm5f",
-      "name": "amasarda-1keyes",
-      "title": "amasarda-1keyes",
-      "type": "runtime_user.web-service_basic_credentials",
-      "base_type": "runtime_user",
-      "object_type": "definition_runtime_user",
-      "properties": {
-        "auth_option": "*****",
-        "basic_password": "*****",
-        "basic_username": "*****",
-        "display_name": "amasarda-1keyes"
-      }
-    }
   },
   "table_types": {
     "tabletype_01PCEI524H2741lVA6RHM8pMAEydQ8cjAMK": {
