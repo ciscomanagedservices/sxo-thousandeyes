@@ -23,6 +23,19 @@
       {
         "schema_id": "datatype.string",
         "properties": {
+          "value": "",
+          "scope": "output",
+          "name": "All Metrics",
+          "type": "datatype.string",
+          "is_required": false,
+          "is_invisible": false
+        },
+        "unique_name": "variable_workflow_01P8Y4GJA3XIL6cMcSUuFeLQxIe79RJG5XA",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
           "value": "'agentId','agentName','countryId','date','roundId','permalink','serverIp','server','loss','minLatency','maxLatency','avgLatency','jitter'",
           "scope": "input",
           "name": "Fields to Return",
@@ -38,32 +51,6 @@
         "properties": {
           "value": "",
           "scope": "input",
-          "name": "Test Id",
-          "type": "datatype.string",
-          "is_required": true,
-          "is_invisible": false
-        },
-        "unique_name": "variable_workflow_01P8XXT1XODR71lsyxLyIM74f4aRdOQndUC",
-        "object_type": "variable_workflow"
-      },
-      {
-        "schema_id": "datatype.string",
-        "properties": {
-          "value": "",
-          "scope": "output",
-          "name": "All Metrics",
-          "type": "datatype.string",
-          "is_required": false,
-          "is_invisible": false
-        },
-        "unique_name": "variable_workflow_01P8Y4GJA3XIL6cMcSUuFeLQxIe79RJG5XA",
-        "object_type": "variable_workflow"
-      },
-      {
-        "schema_id": "datatype.string",
-        "properties": {
-          "value": "",
-          "scope": "input",
           "name": "From Date",
           "type": "datatype.string",
           "description": "Enter Date-Time as YYYY-mm-ddTHH:MM:SS (T is the character T)",
@@ -72,6 +59,19 @@
         },
         "unique_name": "variable_workflow_01P8Y5Y4MYMTR5M7PEnVUDqsXFkw36Gh4uE",
         "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "",
+          "scope": "input",
+          "name": "Test Id",
+          "type": "datatype.string",
+          "is_required": true,
+          "is_invisible": false
+        },
+        "unique_name": "variable_workflow_01P8XXT1XODR71lsyxLyIM74f4aRdOQndUC",
+        "object_type": "variable_workflow"
       }
     ],
     "properties": {
@@ -79,7 +79,7 @@
         "atomic_group": "ThousandEyes",
         "is_atomic": true
       },
-      "delete_workflow_instance": true,
+      "delete_workflow_instance": false,
       "description": "Retrieve end-to-end network metrics for a network test configured with an Enterprise Agent available in your ThousandEyes account. \nDocumentation: https://developer.thousandeyes.com/v6/test_data/#/end-to-end_metrics\n\nSteps to use:\n1. Setup your ThousandEyes API Target \u0026 Account Key\n2. Provide your Test ID, from \u0026 to dates in the format YYYY-MM-DDTHH:MM:SS and what fields you'd like to have returned (this step is optional - by default, all fields/values are returned)\n3. If the request is successful, the output of this atomic is a JSON string with the metrics ",
       "display_name": "TE - Get End-to-End Network Metrics",
       "runtime_user": {
